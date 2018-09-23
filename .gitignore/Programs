@@ -1,0 +1,77 @@
+Question 1. Write a C# Program to print simple message "Hello World.".
+using System;
+using System.Collection.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplicationHW
+{
+	class Program
+	{
+		Static void Main(string[] args){
+			Console.WriteLine("Hello World.");
+			Console.ReadLine();
+		}
+	}
+}
+
+Question 2. Write a C# program to enter two no. througth user and print Addition.
+using System;
+using System.Collection.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Addition
+{
+	class Program
+	{
+		Static void Main(string[] args)
+		{
+			int a,b,c;
+			Console.Write("Enter a value of a: ");
+			a = Int32.Parse(Console.ReadLine());
+			Console.Write("Enter a value of b: ");
+			b = Int32.Parse(Console.ReadLine());
+			c = a+ b;			
+			Console.Write("Additin of a = {0} and b= {1} is" + c, a,b);
+			Console.ReadLine();
+		}
+	}
+}
+
+Question 3. Write a C# program in which accept user detail as name,city,age,pin.no., the store all the value in the appropriate variable and the print all the information in correct format.
+
+using System;
+using System.Collection.Generic;
+using System.Linq;
+using System.Text;
+
+namespace StoreValue
+{
+	class Program
+	{
+		Static void Main(string[] args)
+		{
+			string Name,City;
+			int Age,PinNo;
+			Console.WriteLine("Name");
+			Name = Console.ReadLine();
+
+			Console.WriteLine("City");
+			City = Console.ReadLine();
+
+			Console.WriteLine("Age");
+			Age = Int32.Parse(Console.ReadLine());
+
+			Console.WriteLine("PinNo");
+			PinNo = Int32.Parse(Console.ReadLine());
+
+			Console.WriteLine("Name : " + Name);
+			Console.WriteLine("City : " + City);
+			Console.WriteLine("Age : " + Age);
+			Console.WriteLine("PinNo : " + PinNo);
+		
+			Console.ReadLine();
+		}
+	}
+}
